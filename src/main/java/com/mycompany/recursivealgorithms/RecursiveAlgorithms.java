@@ -3,6 +3,7 @@ package com.mycompany.recursivealgorithms;
 import com.mycompany.recursivealgorithms.classes.*;
 
 public class RecursiveAlgorithms {
+    
     public static void main(String[] args) {
         // Variables or inputs        
         int[] array = {14, 10, 9, 25, 7, 18, 17, 19, 20, 21};   
