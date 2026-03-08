@@ -6,7 +6,7 @@ public class RecursiveAlgorithms {
     
     public static void main(String[] args) {
         // Variables or inputs        
-        int[] array = {14, 10, 9, 25, 7, 18, 17, 19, 20, 21};   
+        int[] array = {14, 10, 9, 25, 7, 3, 17, 19, 20, 21};   
         int[] sortedArray = {1, 2, 9, 16, 17, 21, 28, 35, 46, 48};   
         int n = 15; //For Factorial and Fibonacci
         int startIndex = 5; // For FindMaxInList, SumOfList, ProductOfList, and BinarySearch start index
@@ -18,7 +18,7 @@ public class RecursiveAlgorithms {
         int forSumOfEvenNumbers = 25; //SumOfEvenNumbers parameter        
         String reverseString = "Software Engineering"; //For ReverseString     
         String subsetString = "SICT"; //For Subsets and Permutations
-        int subsetIndex = 0; //For Subsets and Permutations
+        int subsetIndex = 1; //For Subsets and Permutations
         
         ////////////////////////////////////////////////////////////////////////
         String headerText = "The Output of Applying OOP to Simple Recursive Algorithms Using Java";
@@ -76,7 +76,7 @@ public class RecursiveAlgorithms {
 
         // 9. Binary Search
         BinarySearch bsearch1 = new BinarySearch(sortedArray, searchingItem, startIndex);
-        BinarySearch bsearch2 = new BinarySearch(sortedArray, 16);
+        BinarySearch bsearch2 = new BinarySearch(sortedArray, 35);
         bsearch1.printResult();
         bsearch2.printResult();
         
@@ -101,7 +101,7 @@ public class RecursiveAlgorithms {
         ReverseString reverseStr = new ReverseString(reverseString);
         reverseStr.printResult();
 
-        // 15. Generate Subsets
+        // 15. Generate Subsets of a string
         Subsets subsetsStr1 = new Subsets(subsetString);
         Subsets subsetsStr2 = new Subsets(subsetString, subsetIndex);
         subsetsStr1.printResult();
@@ -113,5 +113,5 @@ public class RecursiveAlgorithms {
         
         
         System.out.println(String.format("\n\n%" + paddingFooter + "s%s\n", "", footerText));
-    }
+    }    
 }
